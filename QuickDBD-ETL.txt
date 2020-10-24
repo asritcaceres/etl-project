@@ -56,18 +56,3 @@ CREATE TABLE "Candy_merge" (
 );
 
 
-
-
-SELECT cd."CandyName", cd."sugarpercent", cd."pricepercent", cd."winpercent", ch."Percent_Joy", ch."Percent_Meh", ch."Percent_Despair"
-from "Candy_data" as cd
-Inner Join "Candy_hierarchy" as ch
-on cd."CandyName" = ch."CandyName"
-Order BY "Percent_Joy" desc;
-
-
-Select cd."CandyName", cd."sugarpercent", cd."pricepercent", cd."winpercent", ch."Percent_Joy", ch."Percent_Meh", ch."Percent_Despair"
-from "Candy_data" as cd
-Inner Join "Candy_hierarchy" as ch
-on cd."CandyName" = ch."CandyName"
-Order BY "winpercent" desc;
-
